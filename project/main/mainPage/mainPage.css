@@ -1,0 +1,245 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*overflow-x: scroll;*/
+	background-color: var(--black-color);
+}
+
+.container {
+	overflow: hidden;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/*overflow-x: scroll;*/
+}
+
+.navigation-block {
+	/*border: 2px solid purple;*/
+	padding-top: 56px;
+	background-color: var(--black-color);
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navigation-block > .searchBar {
+	margin-bottom: 20px;
+}
+
+	/*--------- Navbar properties ---------*/
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 90%;
+	/*max-width: 70%;*/
+	/*padding-left: 57px;*/
+	height: 40px;
+	/*border-radius: 50px;*/
+	position: relative;
+	left: 5px;
+	overflow: scroll;
+}
+.nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+button.nav-token {
+	height: 40px;
+	font-size: 16px;
+	font-weight: 800 !important;
+	display: flex;
+	align-items: center;
+	text-align: center !important;
+	justify-content: center;
+}
+
+p {
+	font-size: 14px !important;
+}
+
+button.nav-token:not(:last-child) {
+	margin-right: 12px;
+}
+
+button.nav-token#forYou-prop {
+	min-width: 133px;
+}
+
+button.nav-token#view-prop {
+	min-width: 127px;
+}
+
+button.nav-token#feelings-prop {
+	min-width: 190px;
+}
+
+button.nav-token#random-props {
+	min-width: 192px;
+}
+
+
+
+	/*--------- Headline with section info ---------*/
+.container > .section-title-container {
+	margin-bottom: 25px;
+	margin-left: 25px;
+	margin-top: 10px;
+
+}
+.container > .section-title-container > .section-title {
+	color: var(--white-color);
+	padding-left: 15px;
+}
+
+	/*--------- Card container & cards ---------*/
+
+.card-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.mainpage-menu {
+	position: fixed; !important;
+	bottom: 0;
+	margin-top: 10px;
+	min-width: 90%;
+	left: 50% !important;
+	transform: translateX(-50.1%) !important;
+}
+
+	
+
+	/*--------- Searchbar option layout ---------*/
+
+
+.container.search-active {
+	padding-top: 56px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.input-container {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	/*padding-right: 20px;*/
+	align-items: center;
+}
+
+.searchBar.mainpage-searchbar.search-active {
+	width: 260px;
+	margin-right: 12px;
+
+}
+
+.cancel-button {
+	color: var(--white-color);
+}
+
+.search-categories-container {
+	margin-bottom: 22px;
+}
+
+.search-categories:not(:first-child) {
+	margin-left: 12px;
+}
+
+.search-categories#find-users {
+	width: 135px;
+}
+
+.search-definer {
+	width: 100%;
+	margin-bottom: 22px;
+	height: 4px;
+	background-color: var(--white-color);
+}
+
+.history-info-container > .title-block {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--white-color);
+	margin-bottom: 12px;
+}
+
+.history-search-queries-block {
+	display: flex;
+	/*width: 100%;*/
+
+	flex-direction: column;
+}
+
+.main-search-title {
+	color: var(--white-color);
+}
+
+.search-query {
+	text-align: left;
+	color: var(--white-color);
+}
+
+
+	/*--------- Media queries ---------*/
+
+@media screen and (min-width: 714px) {
+	.nav-container {
+		/*min-width: 100%;*/
+		/*display: flex;*/
+		/*align-items: center;*/
+		/*justify-content: center;*/
+		/*left: 0;*/
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.card-container {
+		display: grid !important;
+		grid-template-columns: auto auto;
+		grid-gap: 5px;
+	}
+
+	.card-container > .card {
+		height: 210px;
+	}
+	.container > .section-title-container > .section-title {
+		color: var(--white-color);
+		text-align: center;
+		width: 100%;
+		
+		
+	}
+	.section-title-container {
+		position: relative;
+		/*right: 275px;*/
+		text-align: center;
+	}
+}
+
+	/*  */
+
+@media screen and (min-width: 1125px) {
+	.card-container {
+		display: grid !important;
+		grid-template-columns: auto auto auto;
+	}
+	.nav-container {
+		min-width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 0;
+	}
+}
