@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+	/*--------- FONT PRESET ---------*/
+	--main-font: "Montserrat", sans-serif;
+
+	/*--------- COLORS ---------*/
+	--black-color: #020204;
+	--brown-color: #C78B46;
+	--green-color: #9D8A5F;
+	--light-grey-color: #58585C;
+	--grey-color: #2D2D30;
+	--pink-color: #E1AF8A;
+	--white-color: #FFFFFF;
+	--yellow-color: #E7BB63;
+}
+
+	/*--------- FONT SETTING ---------*/
+	.headerOneFont {
+		font-weight: 900;
+		font-size: 28px;
+		line-height: 33.6px;
+	}
+
+	.headerTwoFont {
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 28.8px;
+	}
+
+	.buttonOneFont {
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.buttonTwoFont {
+		font-weight: 900;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.captionOneFont {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.captionTwoFont {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	/*--------- RESET ---------*/
+* {
+	font-family: var(--main-font);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+}
+
+button {
+	font-family: var(--main-font);
+	outline: none;
+	border: none;
+	font-weight: 800;
+	font-family: var(--main-font);
+	background-color: transparent;
+	padding: 5px 0;
+	cursor: pointer;
+}

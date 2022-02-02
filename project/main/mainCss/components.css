@@ -1,0 +1,200 @@
+	/*--------- Buttons ---------*/
+.button-default {
+	background-color: var(--yellow-color);
+	border-radius: 64px;
+	width: 327px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-second {
+	background-color: transparent;
+	border: 1px solid var(--white-color);
+	border-radius: 64px;
+	width: 327px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-color);
+}
+
+.button-action {
+	border-radius: 64px;
+	width: 327px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-color);
+}
+
+	/*--------- Tokens ---------*/
+.token-default {
+	background-color: var(--yellow-color);
+	text-align: center;
+	padding: 10px 24px 8px;
+	border-radius: 48px;
+	max-width: 100%;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.token-second {
+	text-align: center;
+	padding: 10px 24px 8px;
+	border: 1px solid var(--white-color);
+	color: var(--white-color);
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 22px;
+	border-radius: 48px;
+}
+
+.token-small {
+	text-align: center;
+	padding: 8px 12px 6px;
+	background-color: var(--grey-color);
+	color: var(--white-color);
+	border-radius: 48px;
+	width: 58px;
+	max-width: 100%;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+	/*--------- Search Bar ---------*/
+
+.searchBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--grey-color);
+	border-radius: 64px;
+	width: 327px;
+	height: 40px;
+	/*padding-left: 12.5px;*/
+	position: relative;
+	max-width: 100%;
+}
+
+.searchBar .fa-search {
+	position: absolute;
+	left: 5.25%;
+	color: var(--white-color);
+	/*right: 38.89%;*/
+}
+
+.searchBar input {
+	font-size: 0.75rem;
+	color: var(--white-color);
+	padding-left: 12.5%;
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	border-radius: 64px;
+	outline: none;
+	border: none;
+}
+
+	/*--------- Card layout ---------*/
+	/*<div class="card"> 		---- CARD LAYOUT HTML
+		<div class="infoBx">
+			<h1 class="headerOneFont" id="teaName">Лишань Габа Улун</h1>
+			<p class="captionTwoFont" id="teaKind">Тайваньский улун</p>
+			<hr class="definer">
+			<p class="captionTwoFont" id="teaStats">Расслабляет, кислый, плотный</p>		
+		</div>
+		<div class="optionBx">
+			<img class="arrowRight" src="./icons/arrowRight.svg" alt="/img/arrowRight.svg">
+			<img id="teaImg" src="./img/teaImg.png" alt="Tea image">
+		</div>
+	</div>*/
+.card {
+	background-color: var(--yellow-color);
+	cursor: pointer;
+	width: 375px;
+	max-width: 100%;
+	/*height: 185px;*/
+	min-height: 202px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.card > .infoBx {
+	width: 65%;
+	padding-top: 20px;
+	padding-left: 24px;
+	color: var(--black-color);
+	height: 100%;
+}
+.card > .infoBx > #teaName {
+	margin-bottom: 8px;
+}
+
+.card > .infoBx > #teaKind {
+	margin-bottom: 24px;
+}
+
+.card > .infoBx > .definer {
+	width: 95%;
+	height: 0px;
+	background-color: var(--black-color);
+	margin-bottom: 8px;
+	border-bottom-width: 0;
+	border: 1px solid var(--black-color);
+}
+
+.card > .optionBx {
+	width: 35%;
+	height: 100%;
+	position: relative;
+}
+
+.card > .optionBx > #teaImg {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	background-image: url(./img/Card.svg) !important;
+	right: 0;
+	width: 116px;
+	height: 101px;
+	border-radius: 500% 0 0;
+}
+
+.card > .optionBx > .arrowRight {
+	position: absolute;
+	right: 1.5rem;
+	top: 14px;
+}
+
+img {
+	color: var(--yellow-color);
+}
+
+	/*--------- Menu layout ---------*/
+	/*<div class="menu"> - MENU LAYOUT HTML
+		<button id="menu" class="menuBtn"><img src="./icons/mainYellow.svg" alt=""></button>
+		<button id="add" class="menuBtn"><img src="./icons/add.svg" alt=""></button>
+		<button id="teaCup" class="menuBtn"><img src="./icons/cup.svg" alt=""></button>
+	</div>*/
+.menu {
+	background-color: var(--black-color);
+	width: 375px;
+	height: 81px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 100%;
+}
