@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="mainpage.css">
+	<link rel="stylesheet" href="./mainCss/components.css">
+	<link rel="stylesheet" href="./mainCss/headStyles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+	body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*overflow-x: scroll;*/
+	background-color: var(--black-color);
+}
+
+.container {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/*overflow-x: scroll;*/
+}
+
+.navigation-block {
+	/*border: 2px solid purple;*/
+	padding-top: 56px;
+	background-color: var(--black-color);
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navigation-block > .searchBar {
+	margin-bottom: 20px;
+}
+
+	/*--------- Navbar properties ---------*/
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 90%;
+	/*max-width: 70%;*/
+	/*padding-left: 57px;*/
+	height: 40px;
+	/*border-radius: 50px;*/
+	position: relative;
+	left: 5px;
+	overflow: scroll;
+}
+.nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+button.nav-token {
+	height: 40px;
+	font-size: ;
+	display: flex;
+	align-items: center;
+	text-align: center !important;
+	justify-content: center;
+}
+
+p {
+	font-size: 14px !important;
+}
+
+button.nav-token:not(:last-child) {
+	margin-right: 12px;
+}
+
+button.nav-token:nth-child(1) {
+	min-width: 123px;
+}
+
+button.nav-token:nth-child(2) {
+	min-width: 117px;
+}
+
+button.nav-token:nth-child(3) {
+	min-width: 180px;
+}
+
+button.nav-token:nth-child(4) {
+	min-width: 185px;
+}
+
+
+
+	/*--------- Headline with section info ---------*/
+.container > .section-title-container > .section-title {
+	color: var(--white-color);
+	margin-bottom: 25px;
+	margin-left: 24px;
+	margin-top: 10px;
+}
+
+	/*--------- Card container & cards ---------*/
+
+.card-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.mainpage-menu {
+	position: fixed; !important;
+	bottom: 0;
+	margin-top: 10px;
+	min-width: 90%;
+	left: 50% !important;
+	transform: translateX(-50.1%) !important;
+}
+
+	
+	/*--------- Media queries ---------*/
+
+@media screen and (min-width: 714px) {
+	.nav-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 0;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.card-container {
+		display: grid !important;
+		grid-template-columns: auto auto;
+	}
+
+	.card-container > .card {
+		height: 210px;
+	}
+	.section-title-container {
+		position: relative;
+		right: 275px;
+		text-align: center
+	}
+}
+
+@media screen and (min-width: 1125px) {
+	.card-container {
+		display: grid !important;
+		grid-template-columns: auto auto auto;
+	}
+}
+
+.container.search-active {
+	padding-top: 56px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.input-container {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	/*padding-right: 20px;*/
+	align-items: center;
+}
+
+.searchBar.mainpage-searchbar.search-active {
+	width: 260px;
+	margin-right: 12px;
+
+}
+
+.cancel-button {
+	color: var(--white-color);
+}
+
+.search-categories-container {
+	margin-bottom: 22px;
+}
+
+.search-categories:not(:first-child) {
+	margin-left: 12px;
+}
+
+.search-categories#find-users {
+	width: 135px;
+}
+
+.search-definer {
+	width: 100%;
+	margin-bottom: 22px;
+	height: 4px;
+	background-color: var(--white-color);
+}
+
+.history-info-container > .title-block {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--white-color);
+	margin-bottom: 12px;
+}
+
+.history-search-queries-block {
+	display: flex;
+	/*width: 100%;*/
+
+	flex-direction: column;
+}
+
+.main-search-title {
+	color: var(--white-color);
+}
+
+.search-query {
+	text-align: left;
+	color: var(--white-color);
+}
+</style>
+<body>
+	<div class="container search-active">
+		<div class="input-container">
+			<div class="searchBar mainpage-searchbar search-active">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input id="infoInput" type="text">
+			</div>
+			<h2 class="buttonTwoFont cancel-button">Отмена</h2>
+		</div>
+		<div class="search-categories-container">
+			<button class="token-small buttonTwoFont search-categories" id="find-tea">Чай</button>
+			<button class="token-small buttonTwoFont search-categories" id="find-users">Пользователи</button>
+			<button class="token-small buttonTwoFont search-categories" id="find-tags">Теги</button>
+		</div>
+		<hr class="search-definer">
+		<div class="history-info-container">
+			<div class="title-block">
+				<button class="buttonTwoFont main-search-title">История</button>
+				<button class="buttonTwoFont main-search-title">Очистить</button>
+			</div>
+			<div class="history-search-queries-block">
+				<button class="captionOneFont search-query">Лишань Габа Улун</button>
+				<button class="captionOneFont search-query">Те Гуань Инь «Богиня милосердия»</button>
+				<button class="captionOneFont search-query">Ланьхуа Фэн Жоу Гуй</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="mainpage.js"></script>
+	<script>
+		let mainpageSearchbar = document.querySelector(".mainpage-searchbar");
+		mainpageSearchbar.addEventListener("click", showSearchProperties);
+		function showSearchProperties() {
+			document.body.innerHTML = "";
+		}
+	</script>
+</body>
+</html>
